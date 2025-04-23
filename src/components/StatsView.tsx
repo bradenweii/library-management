@@ -133,9 +133,7 @@ const StatsView: React.FC<StatsProps> = ({ stats }) => {
           <li className="flex items-start">
             <span className="mr-2">•</span>
             <span>
-              {stats.checkedOut > stats.available 
-                ? "Most of your books are currently out on loan."
-                : "Most of your books are currently available."}
+              {stats.available} books are currently available in your library.
             </span>
           </li>
           {genreData.length > 0 && (
